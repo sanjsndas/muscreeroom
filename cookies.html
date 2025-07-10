@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookies Policy - MushCreeRoom</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Playfair Display for serif headers, Roboto for sans-serif body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom Tailwind Configuration */
+        :root {
+            --color-primary-plum: #6E3B6E;
+            --color-accent-cream: #EFE7DD;
+            --color-accent-moss: #7BA05B;
+            --color-accent-gray: #B0AAA0;
+        }
+
+        .font-header {
+            font-family: 'Playfair Display', serif;
+        }
+        .font-body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .bg-primary-plum { background-color: var(--color-primary-plum); }
+        .text-primary-plum { color: var(--color-primary-plum); }
+        .bg-accent-cream { background-color: var(--color-accent-cream); }
+        .text-accent-cream { color: var(--color-accent-cream); }
+        .bg-accent-moss { background-color: var(--color-accent-moss); }
+        .text-accent-moss { color: var(--color-accent-moss); }
+        .bg-accent-gray { background-color: var(--color-accent-gray); }
+        .text-accent-gray { color: var(--color-accent-gray); }
+
+        /* Custom scrollbar for a more aesthetic feel */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: var(--color-accent-cream);
+            border-radius: 5px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--color-accent-moss);
+            border-radius: 5px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--color-primary-plum);
+        }
+
+        /* General body styling */
+        body {
+            background-color: var(--color-accent-cream);
+            color: #333;
+            line-height: 1.7;
+        }
+
+        /* Cookie Consent Dialog Styling */
+        #cookie-consent-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: var(--color-primary-plum);
+            color: var(--color-accent-cream);
+            padding: 1.5rem 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            border-top-left-radius: 1.5rem;
+            border-top-right-radius: 1.5rem;
+            text-align: center;
+        }
+        #cookie-consent-banner p {
+            margin-bottom: 1rem;
+            font-size: 1.125rem; /* lg */
+            line-height: 1.6;
+        }
+        #cookie-consent-banner .buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        #cookie-consent-banner button {
+            padding: 0.75rem 1.5rem;
+            border-radius: 9999px; /* full rounded */
+            font-weight: 600; /* semibold */
+            transition: all 0.3s ease-in-out;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        #cookie-consent-banner #accept-cookies {
+            background-color: var(--color-accent-moss);
+            color: white;
+        }
+        #cookie-consent-banner #accept-cookies:hover {
+            background-color: #6a8c4c; /* slightly darker moss */
+            transform: scale(1.05);
+        }
+        #cookie-consent-banner #decline-cookies {
+            background-color: var(--color-accent-gray);
+            color: #333;
+        }
+        #cookie-consent-banner #decline-cookies:hover {
+            background-color: #9a948e; /* slightly darker gray */
+            transform: scale(1.05);
+        }
+        #cookie-consent-banner #manage-cookies {
+            background-color: transparent;
+            color: var(--color-accent-cream);
+            border: 2px solid var(--color-accent-cream);
+        }
+        #cookie-consent-banner #manage-cookies:hover {
+            background-color: var(--color-accent-cream);
+            color: var(--color-primary-plum);
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="font-body antialiased">
+    <!-- Header -->
+    <header class="bg-primary-plum text-accent-cream shadow-lg py-4 px-6 md:px-12 rounded-b-xl">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <h1 class="text-3xl font-header font-bold mb-4 md:mb-0">MushCreeRoom</h1>
+            <nav>
+                <ul class="flex flex-wrap justify-center space-x-4 md:space-x-8 text-lg">
+                    <li><a href="index.html" class="hover:text-accent-moss transition duration-300 ease-in-out px-3 py-2 rounded-lg">Home</a></li>
+                    <li><a href="privacy.html" class="hover:text-accent-moss transition duration-300 ease-in-out px-3 py-2 rounded-lg">Privacy</a></li>
+                    <li><a href="terms.html" class="hover:text-accent-moss transition duration-300 ease-in-out px-3 py-2 rounded-lg">Terms</a></li>
+                    <li><a href="cookies.html" class="hover:text-accent-moss transition duration-300 ease-in-out px-3 py-2 rounded-lg">Cookies</a></li>
+                    <li><a href="contact.html" class="hover:text-accent-moss transition duration-300 ease-in-out px-3 py-2 rounded-lg">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 md:px-12 py-16">
+        <section class="bg-white p-10 rounded-3xl shadow-xl mb-20">
+            <h2 class="text-4xl font-header font-bold text-primary-plum mb-8 text-center">MushCreeRoom Cookies Policy: Navigating Your Digital Forest</h2>
+            <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                At MushCreeRoom, we believe in cultivating not just mushrooms, but also a transparent and secure online experience for our community. Just as mycelium forms intricate networks beneath the forest floor, our website utilizes small data files called "cookies" to enhance your browsing journey. This Cookies Policy explains what cookies are, how we use them, the types of cookies we employ, how third parties might use cookies on our Site, and your choices regarding cookies. By continuing to use our Site, you are consenting to our use of cookies in accordance with this policy. We are committed to ensuring your digital exploration of MushCreeRoom is as serene and insightful as the growth of your indoor fungal forest.
+            </p>
+            <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                Our aim is to provide you with a seamless and personalized experience, allowing you to easily navigate our "Shop Kits," delve into "The CreeRoom Journal," share your "Grow Room Inspo," and connect with our "Community Sporeboard." Cookies play a vital role in enabling these functionalities, remembering your preferences, and helping us understand how you interact with our magical world of fungi. We want you to feel empowered and informed about the data collected and its purpose, fostering the same trust and clarity we build into every MushCreeRoom product.
+            </p>
+
+            <h3 class="text-3xl font-header font-bold text-accent-moss mb-6 mt-10">1. What Are Cookies?</h3>
+            <p class="text-lg text-gray-700 mb-4 leading-relaxed">
+                Cookies are tiny text files that are stored on your computer or mobile device when you visit a website. They are widely used to make websites work more efficiently, as well as to provide reporting information and to remember your preferences for future visits. Imagine them as tiny digital markers left by our website on your device, helping us recognize you when you return. These files contain small amounts of information, such as a unique identifier, and are sent back to the originating website on each subsequent visit, or to another website that recognizes that cookie.
+            </p>
+            <p class="text-lg text-gray-700 mb-4 leading-relaxed">
+                Cookies can be "persistent" or "session" cookies. Persistent cookies remain on your personal computer or mobile device when you go offline, while session cookies are deleted as soon as you close your web browser. They serve various functions, from enabling basic site navigation and security to personalizing your content and delivering targeted advertisements. Without certain cookies, many website functionalities would simply not work, or would be significantly less convenient. They are a fundamental part of modern web browsing, designed to make your online experience smoother and more relevant.
+            </p>
+            <p class="text-lg text-gray-700 mb-4 leading-relaxed">
+                Beyond traditional cookies, other similar technologies exist, such as web beacons, pixel tags, and local storage. These technologies also help us collect information about your interactions with our site, track user behavior, and provide personalized content. This policy covers our use of all such technologies that function similarly to cookies. Our commitment is to transparency, ensuring you understand how these digital tools contribute to your MushCreeRoom experience.
+            </p>
+
+            <h3 class="text-3xl font-header font-bold text-accent-moss mb-6 mt-10">2. How We Use Cookies</h3>
+            <p class="text-lg text-gray-700 mb-4 leading-relaxed">
+                MushCreeRoom uses cookies for several purposes, aiming to enhance your experience and provide relevant services. Our use of cookies falls into several categories, each serving a distinct function to ensure our digital forest thrives and offers you the best possible journey. We carefully select and manage the cookies we deploy, always with your privacy and user experience in mind.
+            </p>
+            <ul class="list-disc list-inside text-gray-700 mb-6 pl-4 space-y-2">
+                <li><strong>Strictly Necessary Cookies:</strong> These cookies are essential for the operation of our Site. They enable you to navigate around the website and use its features, such as accessing secure areas, adding items to your shopping cart, and making purchases. Without these cookies, services like online shopping or account login cannot be provided. They are automatically placed on your device when you visit our site, as they are fundamental to its functionality.</li>
+                <li><strong>Performance and Analytics Cookies:</strong> These cookies collect information about how you use our Site, such as which pages you visit most often, and if you encounter any error messages. This data helps us understand and analyze user behavior, allowing us to measure and improve the performance of our Site. For example, we might use them to identify popular "CreeRoom Journal" articles or to optimize the "Shop Kits" layout. All information these cookies collect is aggregated and therefore anonymous. It is only used to improve how our website works.</li>
+                <li><strong>Functionality Cookies:</strong> These cookies allow our Site to remember choices you make (such as your username, language, or the region you are in) and provide enhanced, more personal features. For instance, they can remember your "MushMood Filter" preferences or save items in your wishlist. They can also be used to remember changes you have made to text size, fonts, and other parts of web pages that you can customize. The information these cookies collect may be anonymized and they cannot track your browsing activity on other websites.</li>
+                <li><strong>Advertising and Targeting Cookies:</strong> These cookies are used to deliver advertisements more relevant to you and your interests. They are also used to limit the number of times you see an advertisement and help measure the effectiveness of the advertising campaigns. They are usually placed by advertising networks with our permission. They remember that you have visited a website and this information is shared with other organizations, such as advertisers. For example, after visiting our "Wellness Kit" section, you might see MushCreeRoom ads on other sites.</li>
+                <li><strong>Social Media Cookies:</strong> These cookies are set by a range of social media services that we have added to the site to enable you to share our content with your friends and networks. They are capable of tracking your browser across other sites and building up a profile of your interests. This may impact the content and messages you see on other websites you visit. If you do not allow these cookies, you may not be able to use or see these sharing tools.</li>
+            </ul>
+            <p class="text-lg text-gray-700 mb-4 leading-relaxed">
+                By understanding these categories, you gain a clearer picture of how cookies contribute to your overall MushCreeRoom experience. We are committed to using cookies responsibly, ensuring they serve to enhance your journey rather than compromise your privacy.
+            </p>
+
+            <h3 class="text-3xl font-header font-bold text-accent-moss mb-6 mt-10">3. Third-Party Cookies</h3>
+            <p class="text-lg text-gray-700 mb-4 leading-relaxed">
+                In addition to our own cookies, we may also use various third-parties cookies to report usage statistics of the Site, deliver advertisements on and through the Site, and so on. These third-party cookies are set by external domains and are subject to the privacy policies of those third parties. We carefully select our third-party partners to ensure they adhere to high standards of data protection and privacy. However, we do not have direct control over the specific cookies they set or how they use the information collected.
+            </p>
+            <p class="text-lg text-gray-700 mb-4 leading-relaxed">
+                Common third-party services that may set cookies on our Site include:
+            </p>
+            <ul class="list-disc list-inside text-gray-700 mb-6 pl-4 space-y-2">
+                <li><strong>Google Analytics:</strong> Used to track and report website traffic, helping us understand how visitors engage with our Site. This provides insights into popular content, user navigation paths, and areas for improvement.</li>
+                <li><strong>Google Ads:</strong> Used for advertising purposes, including remarketing campaigns to show relevant ads to users who have visited our Site.</li>
+                <li><strong>Social Media Platforms (e.g., Facebook, Instagram, Pinterest):</strong> If you use social sharing features on our Site, these platforms may set cookies to connect your activity on our Site with your social media profiles. This allows for seamless sharing and helps us understand how our content is distributed.</li>
+                <li><strong>Payment Processors:</strong> When you make a purchase, secure payment gateways may use cookies to facilitate the transaction and ensure security.</li>
+                <li><strong>Customer Support Tools:</strong> Third-party chat or support tools may use cookies to remember your chat history or preferences for a smoother support experience.</li>
+            </ul>
+            <p class="text-lg text-gray-700 mb-4 leading-relaxed">
+                We encourage you to review the privacy and cookie policies of these third parties to understand their data collection and usage practices. While we aim to partner with reputable providers, we cannot be held responsible for their independent practices.
+            </p>
+
+            <h3 class="text-3xl font-header font-bold text-accent-moss mb-6 mt-10">4. Your Choices Regarding Cookies</h3>
+            <p class="text-lg text-gray-700 mb-4 leading-relaxed">
+                You have the power to manage your cookie preferences and control how your data is collected and used. While strictly necessary cookies are essential for the Site's basic functionality, you can choose to accept or decline other types of cookies. Your choices can significantly impact your experience on our Site.
+            </p>
+            <ul class="list-disc list-inside text-gray-700 mb-6 pl-4 space-y-2">
+                <li><strong>Browser Settings:</strong> Most web browsers allow you to control cookies through their settings. You can typically set your browser to notify you when you receive a cookie, giving you the chance to decide whether to accept it. You can also configure your browser to block all cookies or to delete specific cookies that have already been placed. Be aware that blocking all cookies may impact the functionality of many websites, including ours.</li>
+                <li><strong>Opt-Out Links:</strong> Many advertising networks offer mechanisms to opt out of targeted advertising. For example, you can opt out of Google's use of cookies by visiting Google's Ads Settings. You can also visit the Network Advertising Initiative Opt-Out Page or the Digital Advertising Alliance Opt-Out Page to learn more about opting out of interest-based advertising.</li>
+                <li><strong>Cookie Consent Banner:</strong> Upon your first visit to MushCreeRoom.com, you will see a cookie consent banner at the bottom of the page. This banner provides you with options to accept all cookies, decline non-essential cookies, or manage your preferences directly. You can revisit your preferences at any time by clicking on a link (if provided) or clearing your browser's cookies.</li>
+                <li><strong>Specific Tool Settings:</strong> Some third-party tools, like the "GrowMeter App Integration," may have their own in-app settings for data collection and preferences. We encourage you to explore these settings within the respective applications.</li>
+            </ul>
+            <p class="text-lg text-gray-700 mb-4 leading-relaxed">
+                Please note that if you delete cookies or refuse to accept them, you might not be able to use all of the features we offer, you may not be able to store your preferences, and some of our pages might not display properly. Your ability to engage with personalized features like the "MushMood Filter" might also be affected. We respect your choices and aim to provide you with the necessary tools to manage your privacy effectively.
+            </p>
+
+            <h3 class="text-3xl font-header font-bold text-accent-moss mb-6 mt-10">5. Changes to This Cookies Policy</h3>
+            <p class="text-lg text-gray-700 mb-4 leading-relaxed">
+                MushCreeRoom may update this Cookies Policy from time to time to reflect changes in our practices or for other operational, legal, or regulatory reasons. When we do, we will revise the "last updated" date at the bottom of this page. We encourage you to frequently check this page for any changes to stay informed about how we are using cookies. Your continued use of the Site following the posting of changes to this policy will be deemed your acceptance of those changes.
+            </p>
+            <p class="text-lg text-gray-700 mb-4 leading-relaxed">
+                We will notify you of any significant changes by posting the new Cookies Policy on this page and updating the "last updated" date. In some cases, we may also provide a more prominent notice (such as a pop-up or email notification) if the changes are particularly impactful. Our commitment to transparency means we want you to always be aware of how your data is handled.
+            </p>
+
+            <h3 class="text-3xl font-header font-bold text-accent-moss mb-6 mt-10">6. Comprehensive Guide to Connecting with MushCreeRoom: Your Fungal Compass</h3>
+            <p class="text-lg text-gray-700 mb-8 leading-relaxed">
+                At MushCreeRoom, we believe that open communication is the lifeblood of our community, much like mycelial networks connect a forest. We are committed to providing multiple pathways for you to connect with us, ensuring your questions are answered, your concerns are addressed, and your journey into indoor mushroom cultivation is supported every step of the way. This comprehensive guide outlines 40 detailed points of contact, covering a wide array of topics and channels, designed to help you navigate your MushCreeRoom experience with ease and confidence. We encourage you to utilize these resources to enrich your understanding, resolve challenges, and share your triumphs.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10">
+                <!-- Point 1 -->
+                <div class="bg-accent-cream p-8 rounded-2xl shadow-lg border-l-4 border-primary-plum">
+                    <h4 class="text-2xl font-header font-bold text-primary-plum mb-4">1. General Inquiries & Information</h4>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        For any broad questions about MushCreeRoom, our brand philosophy, or general information not covered in our FAQs, this is your starting point. We welcome curious minds seeking to understand the essence of our mood-rich indoor mushroom growing experience. This channel is ideal for initial explorations into what makes MushCreeRoom unique, beyond specific product details. Our team is ready to provide a holistic overview of our mission and vision, helping you grasp the full scope of our dedication to blending mycology with aesthetics and mindfulness. We aim to inspire and inform, setting the stage for your magical journey.
+                        <br><br>
+                        <strong>Best Contact Method:</strong> Email (<a href="mailto:info@mushcreeroom.com" class="text-accent-moss hover:underline">info@mushcreeroom.com</a>) or our general contact form.
+                        <br>
+                        <strong>Expected Response Time:</strong> Within 1-2 business days.
+                    </p>
+                </div>
+
+                <!-- Point 2 -->
+                <div class="bg-accent-cream p-8 rounded-2xl shadow-lg border-l-4 border-primary-plum">
+                    <h4 class="text-2xl font-header font-bold text-primary-plum mb-4">2. Customer Support for Existing Orders</h4>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        If you have questions about an order you've already placed, including tracking information, delivery status, or modifications, please use this channel. Providing your order number and the email address used for the purchase will help us assist you more efficiently. We understand the anticipation of receiving your MushCreeRoom kit, and our support team is dedicated to providing timely updates and resolving any shipping or order-related issues. Our goal is to ensure your package arrives safely and promptly, ready for you to begin your cultivation journey.
+                        <br><br>
+                        <strong>Best Contact Method:</strong> Email (<a href="mailto:support@mushcreeroom.com" class="text-accent-moss hover:underline">support@mushcreeroom.com</a>) or phone (<a href="tel:+15551234567" class="text-accent-moss hover:underline">+1 (555) 123-4567</a>).
+                        <br>
+                        <strong>Expected Response Time:</strong> Email within 24 hours; phone during business hours.
+                    </p>
+                </div>
+
+                <!-- Point 3 -->
+                <div class="bg-accent-cream p-8 rounded-2xl shadow-lg border-l-4 border-primary-plum">
+                    <h4 class="text-2xl font-header font-bold text-primary-plum mb-4">3. Technical Support for Grow Kits</h4>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Encountering a challenge with your growing kit? Whether it's a question about humidity, lighting, substrate, or unexpected growth patterns, our technical support team is here to guide you. Please describe your issue in detail, including the kit type, stage of growth, and any environmental factors. Photos can often be very helpful. We understand that mycology can present unique challenges, and our experts are equipped to provide tailored advice to help your fungal forest thrive. We are committed to troubleshooting alongside you, turning potential setbacks into learning opportunities.
+                        <br><br>
+                        <strong>Best Contact Method:</strong> Email (<a href="mailto:techsupport@mushcreeroom.com" class="text-accent-moss hover:underline">techsupport@mushcreeroom.com</a>) with detailed description and photos.
+                        <br>
+                        <strong>Expected Response Time:</strong> Within 2 business days.
+                    </p>
+                </div>
+
+                <!-- Point 4 -->
+                <div class="bg-accent-cream p-8 rounded-2xl shadow-lg border-l-4 border-primary-plum">
+                    <h4 class="text-2xl font-header font-bold text-primary-plum mb-4">4. Sales & Product Inquiries</h4>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Considering a new kit, or have questions about specific product features, pricing, or availability? Our sales team can help you choose the perfect MushCreeRoom experience. Whether you're interested in the culinary delights of our "Mini Kit," the wellness benefits of "Lion's Mane," or the aesthetic appeal of "Glow Shrooms," we can provide detailed information to assist your decision. We're here to guide you through our offerings, helping you select the ideal companion for your indoor growing adventure, ensuring it aligns perfectly with your aspirations.
+                        <br><br>
+                        <strong>Best Contact Method:</strong> Email (<a href="mailto:sales@mushcreeroom.com" class="text-accent-moss hover:underline">sales@mushcreeroom.com</a>) or phone (<a href="tel:+15551234567" class="text-accent-moss hover:underline">+1 (555) 123-4567</a>).
+                        <br>
+                        <strong>Expected Response Time:</strong> Email within 24 hours; phone during business hours.
+                    </p>
+                </div>
+
+                <!-- Point 5 -->
+                <div class="bg-accent-cream p-8 rounded-2xl shadow-lg border-l-4 border-primary-plum">
+                    <h4 class="text-2xl font-header font-bold text-primary-plum mb-4">5. Partnership & Collaboration Opportunities</h4>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Are you a fellow botanical enthusiast, a wellness influencer, a retailer, or a creative mind interested in collaborating with MushCreeRoom? We are always open to exploring partnerships that align with our brand values and mission. Whether it's co-creating content, stocking our products, or developing unique experiences, we welcome innovative ideas that can help us spread the magic of indoor mushroom cultivation. Please provide a brief overview of your proposal and how you envision working together to cultivate a thriving partnership.
+                        <br><br>
+                        <strong>Best Contact Method:</strong> Email (<a href="mailto:partnerships@mushcreeroom.com" class="text-accent-moss hover:underline">partnerships@mushcreeroom.com</a>) with a detailed proposal.
+                        <br>
+                        <strong>Expected Response Time:</strong> Within 3-5 business days for review.
+                    </p>
+                </div>
+
+                <!-- Point 6 -->
+                <div class="bg-accent-cream p-8 rounded-2xl shadow-lg border-l-4 border-primary-plum">
+                    <h4 class="text-2xl font-header font-bold text-primary-plum mb-4">6. Media & Press Inquiries</h4>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        For journalists, bloggers, or media outlets interested in featuring MushCreeRoom, our story, or the fascinating world of indoor mycology, please direct your inquiries here. We are passionate about sharing our vision and the unique experience we offer. Provide details about your publication, the nature of your inquiry, and any specific interview requests or deadlines. We are eager to collaborate on compelling narratives that highlight the beauty, mindfulness, and magic behind cultivating mushrooms at home.
+                        <br><br>
+                        <strong>Best Contact Method:</strong> Email (<a href="mailto:media@mushcreeroom.com" class="text-accent-moss hover:underline">media@mushcreeroom.com</a>).
+                        <br>
+                        <strong>Expected Response Time:</strong> Within 2 business days.
+                    </p>
+                </div>
+
+                <!-- Point 7 -->
+                <div class="bg-accent-cream p-8 rounded-2xl shadow-lg border-l-4 border-primary-plum">
+                    <h4 class="text-2xl font-header font-bold text-primary-plum mb-4">7. Website Technical Issues & Bug Reports</h4>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        If you encounter any technical difficulties while navigating MushCreeRoom.com, such as broken links, display errors, or unresponsive features, please let us know. Your feedback helps us maintain a seamless and enjoyable online experience for everyone. Provide a detailed description of the issue, including the page URL, your browser type, and any steps to reproduce the problem. Screenshots are also highly appreciated. We are committed to swiftly resolving any digital glitches that might hinder your exploration of our fungal forest.
+                        <br><br>
+                        <strong>Best Contact Method:</strong> Email (<a href="mailto:webmaster@mushcreeroom.com" class="text-accent-moss hover:underline">webmaster@mushcreeroom.com</a>).
+                        <br>
+                        <strong>Expected Response Time:</strong> Within 1 business day for acknowledgment, resolution time varies.
+                    </p>
+                </div>
+
+                <!-- Point 8 -->
+                <div class="bg-accent-cream p-8 rounded-2xl shadow-lg border-l-4 border-primary-plum">
+                    <h4 class="2xl font-header font-bold text-primary-plum mb-4">8. Feedback & Suggestions for Improvement</h4>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Your insights are invaluable in helping us grow and evolve. If you have suggestions for new products, improvements to existing kits, ideas for website features, or general feedback on your MushCreeRoom experience, we're all ears. We believe in co-creation with our community, and your innovative ideas can help shape the future of indoor mycology. Share your thoughts, big or small, and help us cultivate an even more magical and user-friendly platform. Every piece of feedback is carefully considered.
+                        <br><br>
+                        <strong>Best Contact Method:</strong> Email (<a href="mailto:feedback@mushcreeroom.com" class="text-accent-moss hover:underline">feedback@mushcreeroom.com</a>) or our dedicated feedback form.
+                        <br>
+                        <strong>Expected Response Time:</strong> Acknowledgment within 2 business days; detailed response if applicable.
+                    </p>
+                </div>
+
+                <!-- Point 9 -->
+                <div class="bg-accent-cream p-8 rounded-2xl shadow-lg border-l-4 border-primary-plum">
+                    <h4 class="text-2xl font-header font-bold text-primary-plum mb-4">9. Privacy Policy & Data Protection Inquiries</h4>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        For questions specifically related to our Privacy Policy, how your personal data is collected, used, stored, or your data protection rights (e.g., GDPR, CCPA requests), please contact our dedicated privacy team. We are committed to transparency and ensuring your data is handled with the utmost care and in compliance with all applicable regulations. Provide clear details about your inquiry or the specific right you wish to exercise. Your privacy is a cornerstone of our trust-based relationship.
+                        <br><br>
+                        <strong>Best Contact Method:</strong> Email (<a href="mailto:privacy@mushcreeroom.com" class="text-accent-moss hover:underline">privacy@mushcreeroom.com</a>).
+                        <br>
+                        <strong>Expected Response Time:</strong> Within 5-7 business days for data requests; general inquiries within 2 business days.
+                    </p>
+                </div>
+
+                <!-- Point 10 -->
+                <div class="bg-accent-cream p-8 rounded-2xl shadow-lg border-l-4 border-primary-plum">
+                    <h4 class="text-2xl font-header font-bold text-primary-plum mb-4">10. Terms and Conditions Clarification</h4>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        If you require clarification on any specific clause or section within our Terms and Conditions, our legal support team can provide further explanation. Understanding the terms that govern your use of MushCreeRoom.com is crucial for a smooth and informed experience. While we cannot provide legal advice, we can help you interpret the language and implications of our terms of service. This ensures you are fully aware of your rights and responsibilities when engaging with our platform.
+                        <br><br>
+                        <strong>Best Contact Method:</strong> Email (<a href="mailto:legal@mushcreeroom.com" class="text-accent-moss hover:underline">legal@mushcreeroom.com</a>).
+                        <br>
+                        <strong>Expected Response Time:</strong> Within 3-5 business days.
+                    </p>
+                </div>
+
+                <!-- Point 11 -->
+                <div class="bg-accent-cream p-8 rounded-2xl shadow-lg border-l-4 border-primary-plum">
+                    <h4 class="text-2xl font-header font-bold text-primary-plum mb-4">11. Cookies Policy Questions</h4>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        For any questions about our Cookies Policy, the types of cookies we use, how they function, or how to manage your cookie preferences beyond what is detailed on this page, please reach out. We are committed to explaining our digital tracking practices in a clear and understandable manner. Your ability to control your online experience is paramount, and we're here to demystify the role of cookies in enhancing your MushCreeRoom journey.
+                        <br><br>
+                        <strong>Best Contact Method:</strong> Email (<a href="mailto:privacy@mushcreeroom.com" class="text-accent-moss hover:underline">privacy@mushcreeroom.com</a>).
+                        <br>
+                        <strong>Expected Response Time:</strong> Within 2 business days.
+                    </p>
+                </div>
+
+                <!-- Point 12 -->
+                <div class="bg-accent-cream p-8 rounded-2xl shadow-lg border-l-4 border-primary-plum">
+                    <h4 class="text-2xl font-header font-bold text-primary-plum mb-4">12. "Ask a Mycologist" Follow-Up</h4>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        If you've submitted a question to our "Ask a Mycologist" section on the "Community Sporeboard" and require further clarification on an expert's response, or have a related follow-up question, please use this dedicated contact point. This ensures your inquiry reaches the appropriate expert for nuanced and in-depth answers. Provide the original question and response for context. We aim to deepen your scientific understanding of fungi, bridging the gap between curiosity and comprehensive knowledge.
+                        <br><br>
+                        <strong>Best Contact Method:</strong> Email (<a href="mailto:mycologist@mushcreeroom.com" class="text-accent-moss hover:underline">mycologist@mushcreeroom.com</a>), referencing your original query.
+                        <br>
+                        <strong>Expected Response Time:</strong> Varies based on mycologist availability, typically 3-7 business days.
+                    </p>
+                </div>
+
+                <!-- Point 13 -->
+                <div class="bg-accent-cream p-8 rounded-2xl shadow-lg border-l-4 border-primary-plum">
+                    <h4 class="text-2xl font-header font-bold text-primary-plum mb-4">13. Community Sporeboard Moderation</h4>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        To report inappropriate content, spam, or violations of our Community Guidelines on the "Community Sporeboard," please contact our moderation team. Your vigilance helps us maintain a safe, respectful, and positive environment for all members. Provide specific details, including usernames, links to posts, and the nature of the violation. We are committed to fostering a supportive community where everyone feels comfortable sharing their fungal journey. Your contribution to maintaining community integrity is highly valued.
+                        <br><br>
+                        <strong>Best Contact Method:</strong> Email (<a href="mailto:moderation@mushcreeroom.com" class="text-accent-moss hover:underline">moderation@mushcreeroom.com</a>).
+                        <br>
+                        <strong>Expected Response Time:</strong> Within 24-48 hours for review and action.
+                    </p>
+                </div>
+
+                <!-- Point 14 -->
+                <div class="bg-accent-cream p-8 rounded-2xl shadow-lg border-l-4 border-primary-plum">
+                    <h4 class="text-2xl font-header font-bold text-primary-plum mb-4">14. "Room of the Month" Submission Support</h4>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        If you're experiencing issues with submitting your "Room of the Month" photos or descriptions to the "Grow Room Inspo Gallery," or have questions about the submission process, please reach out. We want to celebrate your unique fungal sanctuaries and ensure your creative efforts are showcased. Provide details about the problem you're encountering, such as file upload issues or form errors. We're here to help you share your beautiful growing spaces with the wider MushCreeRoom community.
+                        <br><br>
+                        <strong>Best Contact Method:</strong> Email (<a href="mailto:gallery@mushcreeroom.com" class="text-accent-moss hover:underline">gallery@mushcreeroom.com</a>).
+                        <br>
+                        <strong>Expected Response Time:</strong> Within 1-2 business days.
+                    </p>
+                </div>
+
+                <!-- Point 15 -->
+                <div class="bg-accent-cream p-8 rounded-2xl shadow-lg border-l-4 border-primary-plum">
+                    <h4 class="text-2xl font-header font-bold text-primary-plum mb-4">15. "MushMood Filter" Feedback</h4>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Your experience with our unique "MushMood Filter" is important to us. If you have feedback on its recommendations, suggestions for new "moods" or kit bundles, or encounter any usability issues, please let us know. This innovative feature is designed to personalize your journey, and your input helps us refine its accuracy and enhance its magic. Share how the filter has (or hasn't) resonated with your desired vibe, contributing to its continuous improvement.
+                        <br><br>
+                        <strong>Best Contact Method:</strong> Email (<a href="mailto:moodfilter@mushcreeroom.com" class="text-accent-moss hover:underline">moodfilter@mushcreeroom.com</a>).
+                        <br>
+                        <strong>Expected Response Time:</strong> Within 2 business days.
+                    </p>
+                </div>
+
+                <!-- Point 16 -->
+                <div class="bg-accent-cream p-8 rounded-2xl shadow-lg border-l-4 border-primary-plum">
+                    <h4 class="text-2xl font-header font-bold text-primary-plum mb-4">16. "GrowMeter App" Integration Support</h4>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        For technical support or inquiries related to the "GrowMeter App Integration" and its connection with your MushCreeRoom kits, please use this channel. This includes issues with data synchronization, sensor readings, or app functionality. Provide details about your device, app version, and the specific problem you're facing. Our technical team is dedicated to ensuring this smart feature provides accurate and reliable insights into your mushroom's growth, empowering you with data-driven cultivation.
+                        <br><br>
+                        <strong>Best Contact Method:</strong> Email (<a href="mailto:growmeter@mushcreeroom.com" class="text-accent-moss hover:underline">growmeter@mushcreeroom.com</a>).
+                        <br>
+                        <strong>Expected Response Time:</strong> Within 2-3 business days.
+                    </p>
+                </div>
+
+                <!-- Point 17 -->
+                <div class="bg-accent-cream p-8 rounded-2xl shadow-lg border-l-4 border-primary-plum">
+                    <h4 class="text-2xl font-header font-bold text-primary-plum mb-4">17. "ASMR Spores" Audio Issues</h4>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        If you encounter any technical problems with downloading or streaming "ASMR Spores" ambient sounds, such as corrupted files, playback issues, or broken links, please inform us. We want to ensure your sonic journey into the fungal forest is as smooth and immersive as possible. Provide details about the specific soundscape, your device, and the issue encountered. Your feedback helps us maintain the quality of this unique sensory feature.
+                        <br><br>
+                        <strong>Best Contact Method:</strong> Email (<a href="mailto:asmr@mushcreeroom.com" class="text-accent-moss hover:underline">asmr@mushcreeroom.com</a>).
+                        <br>
+                        <strong>Expected Response Time:</strong> Within 1-2 business days.
+                    </p>
+                </div>
+
+                <!-- Point 18 -->
+                <div class="bg-accent-cream p-8 rounded-2xl shadow-lg border-l-4 border-primary-plum">
+                    <h4 class="text-2xl font-header font-bold text-primary-plum mb-4">18. "MushLit Shelf" Book Recommendations</h4>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Have a book or zine recommendation that you believe would be a perfect addition to our "MushLit Shelf" – our curated library of fungal and forest-inspired literature? We're always looking to expand our intellectual horizons and share valuable resources with our community. Please provide the title, author, and a brief explanation of why you think it aligns with the MushCreeRoom ethos. Your contributions help us cultivate a richer literary landscape for fellow enthusiasts.
+                        <br><br>
+                        <strong>Best Contact Method:</strong> Email (<a href="mailto:mushlit@mushcreeroom.com" class="text-accent-moss hover:underline">mushlit@mushcreeroom.com</a>).
+                        <br>
+                        <strong>Expected Response Time:</strong> Acknowledgment within 3 business days; review for potential inclusion.
+                    </p>
+                </div>
+
+                <!-- Point 19 -->
+                <div class="bg-accent-cream p-8 rounded-2xl shadow-lg border-l-4 border-primary-plum">
+                    <h4 class="text-2xl font-header font-bold text-primary-plum mb-4">19. Wholesale & Bulk Order Inquiries</h4>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        For businesses, educational institutions, or large organizations interested in purchasing MushCreeRoom products in bulk or exploring wholesale opportunities, please contact our dedicated wholesale team. We offer special pricing and tailored solutions for larger orders. Provide details about your organization, the products you're interested in, and your estimated quantities. We're excited to help bring the magic of indoor mushroom cultivation to a wider audience through strategic partnerships.
+                        <br><br>
+                        <strong>Best Contact Method:</strong> Email (<a href="mailto:wholesale@mushcreeroom.com" class="text-accent-moss hover:underline">wholesale@mushcreeroom.com</a>).
+                        <br>
+                        <strong>Expected Response Time:</strong> Within 2-3 business days for initial contact.
+                    </p>
+                </div>
+
+                <!-- Point 20 -->
+                <div class="bg-accent-cream p-8 rounded-2xl shadow-lg border-l-4 border-primary-plum">
+                    <h4 class="text-2xl font-header font-bold text-primary-plum mb-4">20. Event & Workshop Inquiries</h4>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Are you organizing an event, workshop, or educational program and would like MushCreeRoom to participate, provide materials, or offer expertise? We are passionate about sharing the wonders of mycology and fostering hands-on learning experiences. Please provide details about your event, including dates, location, audience, and how you envision MushCreeRoom's involvement. We love connecting with communities and inspiring new growers through engaging educational opportunities.
+                        <br><br>
+                        <strong>Best Contact Method:</strong> Email (<a href="mailto:events@mushcreeroom.com" class="text-accent-moss hover:underline">events@mushcreeroom.com</a>).
+                        <br>
+                        <strong>Expected Response Time:</strong> Within 3-5 business days for review.
+                    </p>
+                </div>
+
+                <!-- Point 21 -->
+                <div class="bg-accent-cream p-8 rounded-2xl shadow-lg border-l-4 border-primary-plum">
+                    <h4 class="text-2xl font-header font-bold text-primary-plum mb-4">21. Returns & Refunds for Products</h4>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        For inquiries regarding product returns or refund requests, please refer to our detailed <a href="#" class="text-accent-moss hover:underline">Return Policy</a> first. If your situation is not covered, or you need assistance with the return process, contact our customer service team. Provide your order number, the item(s) you wish to return, and the reason for the return. We strive to make this process as smooth as possible, understanding that sometimes a product may not meet expectations. Your satisfaction is paramount, and we are committed to fair and transparent resolution.
+                        <br><br>
+                        <strong>Best Contact Method:</strong> Email (<a href="mailto:returns@mushcreeroom.com" class="text-accent-moss hover:underline">returns@mushcreeroom.com</a>) with order details.
+                        <br>
+                        <strong>Expected Response Time:</strong> Within 2 business days.
+                    </p>
+                </div>
+
+                <!-- Point 22 -->
+                <div class="bg-accent-cream p-8 rounded-2xl shadow-lg border-l-4 border-primary-plum">
+                    <h4 class="text-2xl font-header font-bold text-primary-plum mb-4">22. Order Cancellation Requests</h4>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        If you need to cancel an order, please contact us as soon as possible. Orders can only be cancelled if they have not yet entered the shipping process. Provide your order number and the reason for cancellation. We will do our best to accommodate your request, but please understand that once an order is being prepared for shipment, it may no longer be possible to halt the process. In such cases, our return policy would apply. Prompt communication helps us manage your request effectively.
+                        <br><br>
+                        <strong>Best Contact Method:</strong> Phone (<a href="tel:+15551234567" class="text-accent-moss hover:underline">+1 (555) 123-4567</a>) for urgent requests, or Email (<a href="mailto:cancellations@mushcreeroom.com" class="text-accent-moss hover:underline">cancellations@mushcreeroom.com</a>).
+                        <br>
+                        <strong>Expected Response Time:</strong> Immediate by phone during business hours; email within 24 hours.
+                    </p>
+                </div>
+
+                <!-- Point 23 -->
+                <div class="bg-accent-cream p-8 rounded-2xl shadow-lg border-l-4 border-primary-plum">
+                    <h4 class="text-2xl font-header font-bold text-primary-plum mb-4">23. Payment & Billing Questions</h4>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        For any inquiries related to payments, billing, charges, or invoices, please contact our accounting department. This includes questions about payment methods, transaction errors, or discrepancies on your statement. Provide your order number and relevant details to help us investigate efficiently. We ensure all financial transactions are handled securely and transparently, and our team is ready to clarify any billing-related concerns you may have. Your financial peace of mind is important to us.
+                        <br><br>
+                        <strong>Best Contact Method:</strong> Email (<a href="mailto:billing@mushcreeroom.com" class="text-accent-moss hover:underline">billing@mushcreeroom.com</a>).
+                        <br>
+                        <strong>Expected Response Time:</strong> Within 2 business days.
+                    </p>
+                </div>
+
+                <!-- Point 24 -->
+                <div class="bg-accent-cream p-8 rounded-2xl shadow-lg border-l-4 border-primary-plum">
+                    <h4 class="text-2xl font-header font-bold text-primary-plum mb-4">24. Account Management & Login Issues</h4>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        If you're experiencing difficulties logging into your MushCreeRoom account, need to update your personal information, or have questions about managing your account settings, our support team can assist. This includes password reset issues, email changes, or profile updates. We aim to ensure your account access is seamless and secure, allowing you to fully enjoy all the personalized features of our Site, from order history to community participation.
+                        <br><br>
+                        <strong>Best Contact Method:</strong> Email (<a href="mailto:accounts@mushcreeroom.com" class="text-accent-moss hover:underline">accounts@mushcreeroom.com</a>) or use the "Forgot Password" link on the login page.
+                        <br>
+                        <strong>Expected Response Time:</strong> Within 24 hours.
+                    </p>
+                </div>
+
+                <!-- Point 25 -->
+                <div class="bg-accent-cream p-8 rounded-2xl shadow-lg border-l-4 border-primary-plum">
+                    <h4 class="text-2xl font-header font-bold text-primary-plum mb-4">25. Newsletter Subscription & Unsubscription</h4>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        To subscribe to our "CreeRoom Journal" newsletter for updates, tips, and special offers, or if you wish to unsubscribe from our mailing list, please use this contact point. While every email includes an unsubscribe link, we're here to help if you encounter any issues. We respect your communication preferences and want to ensure you receive only the content you desire, helping you stay connected to the magic of MushCreeRoom in a way that suits you best.
+                        <br><br>
+                        <strong>Best Contact Method:</strong> Use the unsubscribe link in any newsletter, or Email (<a href="mailto:newsletter@mushcreeroom.com" class="text-accent-moss hover:underline">newsletter@mushcreeroom.com</a>).
+                        <br>
+                        <strong>Expected Response Time:</strong> Within 1 business day for confirmation.
+                    </p>
+                </div>
+
+                <!-- Point 26 -->
+                <div class="bg-accent-cream p-8 rounded-2xl shadow-lg border-l-4 border-primary-plum">
+                    <h4 class="text-2xl font-header font-bold text-primary-plum mb-4">26. Report Content (Non-Moderation Specific)</h4>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        If you find any content on the site (e.g., in "The CreeRoom Journal" or product descriptions) that you believe is inaccurate, misleading, or requires correction, but does not violate community guidelines, please report it here. Your commitment to accuracy helps us maintain the integrity and reliability of our information. Provide the specific URL and details of the content in question. We appreciate your vigilance in helping us ensure our digital forest is a source of trustworthy knowledge.
+                        <br><br>
+                        <strong>Best Contact Method:</strong> Email (<a href="mailto:content@mushcreeroom.com" class="text-accent-moss hover:underline">content@mushcreeroom.com</a>).
+                        <br>
+                        <strong>Expected Response Time:</strong> Within 2-3 business days for review.
+                    </p>
+                </div>
+
+                <!-- Point 27 -->
+                <div class="bg-accent-cream p-8 rounded-2xl shadow-lg border-l-4 border-primary-plum">
+                    <h4 class="text-2xl font-header font-bold text-primary-plum mb-4">27. Accessibility Support</h4>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        MushCreeRoom is committed to making our website accessible to all users. If you encounter any accessibility barriers or have suggestions on how we can improve the accessibility of our Site for individuals with disabilities, please contact us. Your feedback is crucial in helping us ensure that everyone can experience the magic of MushCreeRoom. Provide details about the specific accessibility issue and your assistive technology (if applicable). We are dedicated to creating an inclusive digital environment.
+                        <br><br>
+                        <strong>Best Contact Method:</strong> Email (<a href="mailto:accessibility@mushcreeroom.com" class="text-accent-moss hover:underline">accessibility@mushcreeroom.com</a>).
+                        <br>
+                        <strong>Expected Response Time:</strong> Within 2-3 business days.
+                    </p>
+                </div>
+
+                <!-- Point 28 -->
+                <div class="bg-accent-cream p-8 rounded-2xl shadow-lg border-l-4 border-primary-plum">
+                    <h4 class="text-2xl font-header font-bold text-primary-plum mb-4">28. Legal Inquiries (Non-Policy Specific)</h4>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        For any legal inquiries that are not directly related to our Privacy Policy or Terms and Conditions, such as copyright concerns, intellectual property questions, or formal legal notices, please use this dedicated contact point. This ensures your inquiry is directed to the appropriate legal counsel for prompt and proper handling. Provide all relevant documentation and details to facilitate a thorough review. We are committed to operating with integrity and legal compliance.
+                        <br><br>
+                        <strong>Best Contact Method:</strong> Email (<a href="mailto:legal@mushcreeroom.com" class="text-accent-moss hover:underline">legal@mushcreeroom.com</a>).
+                        <br>
+                        <strong>Expected Response Time:</strong> Varies based on complexity, initial acknowledgment within 3 business days.
+                    </p>
+                </div>
+
+                <!-- Point 29 -->
+                <div class="bg-accent-cream p-8 rounded-2xl shadow-lg border-l-4 border-primary-plum">
+                    <h4 class="text-2xl font-header font-bold text-primary-plum mb-4">29. Career Opportunities</h4>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Interested in joining the MushCreeRoom team and helping us grow magic indoors? If you're passionate about mycology, botanical design, sustainability, or e-commerce, we'd love to hear from you. Please visit our Careers page (if available) for current openings, or send your resume and cover letter to this address if you believe your skills align with our mission. We are always on the lookout for talented individuals who share our vision and dedication to cultivating wonder.
+                        <br><br>
+                        <strong>Best Contact Method:</strong> Email (<a href="mailto:careers@mushcreeroom.com" class="text-accent-moss hover:underline">careers@mushcreeroom.com</a>).
+                        <br>
+                        <strong>Expected Response Time:</strong> Acknowledgment within 5 business days; response time varies based on application volume.
+                    </p>
+                </div>
+
+                <!-- Point 30 -->
+                <div class="bg-accent-cream p-8 rounded-2xl shadow-lg border-l-4 border-primary-plum">
+                    <h4 class="text-2xl font-header font-bold text-primary-plum mb-4">30. Supplier & Vendor Inquiries</h4>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        For potential suppliers or vendors interested in offering products, services, or materials to MushCreeRoom, please use this contact point. We are always seeking high-quality, sustainably sourced, and innovative components to enhance our kits and offerings. Provide details about your products or services, your company's mission, and how you align with MushCreeRoom's values. We are committed to building strong, ethical relationships with our partners to ensure the best for our community and the planet.
+                        <br><br>
+                        <strong>Best Contact Method:</strong> Email (<a href="mailto:vendors@mushcreeroom.com" class="text-accent-moss hover:underline">vendors@mushcreeroom.com</a>).
+                        <br>
+                        <strong>Expected Response Time:</strong> Within 3-5 business days for initial review.
+                    </p>
+                </div>
+
+                <!-- Point 31 -->
+                <div class="bg-accent-cream p-8 rounded-2xl shadow-lg border-l-4 border-primary-plum">
+                    <h4 class="text-2xl font-header font-bold text-primary-plum mb-4">31. Educational Content Collaboration</h4>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Are you an expert in mycology, botany, or sustainable living and interested in contributing to "The CreeRoom Journal" with articles, guides, or research? We welcome collaborations that enrich our educational content and deepen our community's understanding of the fungal kingdom. Please provide your credentials, areas of expertise, and a brief pitch for your proposed content. We are eager to expand our knowledge base with diverse perspectives and authoritative insights.
+                        <br><br>
+                        <strong>Best Contact Method:</strong> Email (<a href="mailto:journal@mushcreeroom.com" class="text-accent-moss hover:underline">journal@mushcreeroom.com</a>).
+                        <br>
+                        <strong>Expected Response Time:</strong> Within 3-5 business days for review.
+                    </p>
+                </div>
+
+                <!-- Point 32 -->
+                <div class="bg-accent-cream p-8 rounded-2xl shadow-lg border-l-4 border-primary-plum">
+                    <h4 class="text-2xl font-header font-bold text-primary-plum mb-4">32. International Shipping Inquiries</h4>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        For customers outside of our primary shipping regions, or for specific questions about international shipping costs, customs, duties, and delivery times, please contact us. We are working to expand our reach and bring the magic of MushCreeRoom to more homes globally. Provide your country and the products you are interested in, and we will do our best to provide accurate information and explore shipping options for your location. Navigating international logistics can be complex, but we're here to help.
+                        <br><br>
+                        <strong>Best Contact Method:</strong> Email (<a href="mailto:international@mushcreeroom.com" class="text-accent-moss hover:underline">international@mushcreeroom.com</a>).
+                        <br>
+                        <strong>Expected Response Time:</strong> Within 2-3 business days.
+                    </p>
+                </div>
+
+                <!-- Point 33 -->
+                <div class="bg-accent-cream p-8 rounded-2xl shadow-lg border-l-4 border-primary-plum">
+                    <h4 class="text-2xl font-header font-bold text-primary-plum mb-4">33. Press Kit Requests</h4>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        If you are a member of the media or a content creator and require our official press kit, including high-resolution images, brand assets, and company information, please submit your request here. Provide details about your publication or platform and the purpose of your request. Our press kit is designed to provide comprehensive resources for accurate and engaging coverage of MushCreeRoom and our unique offerings. We aim to facilitate your work in sharing our story.
+                        <br><br>
+                        <strong>Best Contact Method:</strong> Email (<a href="mailto:media@mushcreeroom.com" class="text-accent-moss hover:underline">media@mushcreeroom.com</a>) with "Press Kit Request" in the subject line.
+                        <br>
+                        <strong>Expected Response Time:</strong> Within 1 business day for access or delivery.
+                    </p>
+                </div>
+
+                <!-- Point 34 -->
+                <div class="bg-accent-cream p-8 rounded-2xl shadow-lg border-l-4 border-primary-plum">
+                    <h4 class="text-2xl font-header font-bold text-primary-plum mb-4">34. Brand Licensing Inquiries</h4>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        For inquiries regarding licensing opportunities for the MushCreeRoom brand, trademarks, or intellectual property, please contact our business development team. We are open to exploring strategic partnerships that align with our brand identity and expand our reach into new markets or product categories. Provide a detailed proposal outlining your interest, your company's background, and the specific licensing opportunity you envision. We are committed to protecting our brand's integrity while fostering growth.
+                        <br><br>
+                        <strong>Best Contact Method:</strong> Email (<a href="mailto:licensing@mushcreeroom.com" class="text-accent-moss hover:underline">licensing@mushcreeroom.com</a>).
+                        <br>
+                        <strong>Expected Response Time:</strong> Within 5-7 business days for initial review.
+                    </p>
+                </div>
+
+                <!-- Point 35 -->
+                <div class="bg-accent-cream p-8 rounded-2xl shadow-lg border-l-4 border-primary-plum">
+                    <h4 class="text-2xl font-header font-bold text-primary-plum mb-4">35. Marketing & Advertising Partnerships</h4>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        If you are an advertising agency, marketing firm, or a platform interested in collaborating on marketing campaigns or advertising initiatives for MushCreeRoom, please reach out. We are always looking for innovative ways to connect with new audiences and share our unique brand story. Provide details about your services, your proposed strategy, and how you believe you can help us reach our target demographic of DIY hobbyists, urban dwellers, and aesthetic plant lovers.
+                        <br><br>
+                        <strong>Best Contact Method:</strong> Email (<a href="mailto:marketing@mushcreeroom.com" class="text-accent-moss hover:underline">marketing@mushcreeroom.com</a>).
+                        <br>
+                        <strong>Expected Response Time:</strong> Within 3-5 business days for review.
+                    </p>
+                </div>
+
+                <!-- Point 36 -->
+                <div class="bg-accent-cream p-8 rounded-2xl shadow-lg border-l-4 border-primary-plum">
+                    <h4 class="text-2xl font-header font-bold text-primary-plum mb-4">36. Customer Testimonials & Success Stories</h4>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        We love celebrating your successful mushroom growing journeys! If you'd like to share a testimonial, a detailed success story, or high-quality photos of your thriving MushCreeRoom, please submit them here. Your stories inspire others and help us showcase the true magic our kits bring to homes. By submitting, you grant us permission to feature your content on our Site and social media (with appropriate credit). Let your fungal triumphs inspire the wider community!
+                        <br><br>
+                        <strong>Best Contact Method:</strong> Email (<a href="mailto:stories@mushcreeroom.com" class="text-accent-moss hover:underline">stories@mushcreeroom.com</a>).
+                        <br>
+                        <strong>Expected Response Time:</strong> Acknowledgment within 2 business days; potential feature within weeks.
+                    </p>
+                </div>
+
+                <!-- Point 37 -->
+                <div class="bg-accent-cream p-8 rounded-2xl shadow-lg border-l-4 border-primary-plum">
+                    <h4 class="text-2xl font-header font-bold text-primary-plum mb-4">37. Technical Support for MycoCraft Items</h4>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        If you have specific technical questions or issues related to "MycoCraft" products, such as assembly of a mushroom-shaped humidifier, functionality of a handmade mist sprayer, or care for a preserved display piece, please contact us. While these items are generally straightforward, we're here to ensure they enhance your MushCreeRoom experience seamlessly. Provide details about the specific MycoCraft item and the nature of your inquiry.
+                        <br><br>
+                        <strong>Best Contact Method:</strong> Email (<a href="mailto:mycocraftsupport@mushcreeroom.com" class="text-accent-moss hover:underline">mycocraftsupport@mushcreeroom.com</a>).
+                        <br>
+                        <strong>Expected Response Time:</strong> Within 2 business days.
+                    </p>
+                </div>
+
+                <!-- Point 38 -->
+                <div class="bg-accent-cream p-8 rounded-2xl shadow-lg border-l-4 border-primary-plum">
+                    <h4 class="text-2xl font-header font-bold text-primary-plum mb-4">38. Website Content Feedback (Non-Technical)</h4>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        For feedback on the overall tone, style, or clarity of our website content (excluding technical issues or factual inaccuracies), please use this channel. We aim for a "quiet, earthy, cozy, poetic, magical-realism vibe" and your input helps us maintain this unique brand voice across all pages, from product descriptions to journal entries. Share your impressions and suggestions for enhancing the atmospheric and sensory aspects of our digital presence.
+                        <br><br>
+                        <strong>Best Contact Method:</strong> Email (<a href="mailto:contentfeedback@mushcreeroom.com" class="text-accent-moss hover:underline">contentfeedback@mushcreeroom.com</a>).
+                        <br>
+                        <strong>Expected Response Time:</strong> Acknowledgment within 2 business days.
+                    </p>
+                </div>
+
+                <!-- Point 39 -->
+                <div class="bg-accent-cream p-8 rounded-2xl shadow-lg border-l-4 border-primary-plum">
+                    <h4 class="text-2xl font-header font-bold text-primary-plum mb-4">39. Partnership with Educational Institutions</h4>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        MushCreeRoom is eager to partner with schools, universities, and other educational institutions to bring mycology and sustainable growing practices into classrooms and research programs. If you represent an educational body and are interested in curriculum development, bulk kit purchases for students, or expert lectures, please contact us. We believe in fostering the next generation of mycologists and environmental stewards. Provide details about your institution and your proposed educational initiative.
+                        <br><br>
+                        <strong>Best Contact Method:</strong> Email (<a href="mailto:education@mushcreeroom.com" class="text-accent-moss hover:underline">education@mushcreeroom.com</a>).
+                        <br>
+                        <strong>Expected Response Time:</strong> Within 3-5 business days for review.
+                    </p>
+                </div>
+
+                <!-- Point 40 -->
+                <div class="bg-accent-cream p-8 rounded-2xl shadow-lg border-l-4 border-primary-plum">
+                    <h4 class="text-2xl font-header font-bold text-primary-plum mb-4">40. General Compliments & Appreciation</h4>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        If you simply want to share your positive experience, express appreciation for our products, or commend our team, we would be delighted to hear from you! Your kind words are the sunshine that nourishes our fungal forest and motivates us to continue cultivating magic. While not a "contact issue," your compliments are a vital form of connection that fuels our passion. Share what you loved most about your MushCreeRoom journey.
+                        <br><br>
+                        <strong>Best Contact Method:</strong> Email (<a href="mailto:appreciation@mushcreeroom.com" class="text-accent-moss hover:underline">appreciation@mushcreeroom.com</a>) or any social media channel.
+                        <br>
+                        <strong>Expected Response Time:</strong> We read every message and appreciate your support!
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-primary-plum text-accent-cream py-12 px-6 md:px-12 rounded-t-xl">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
+            <!-- Customer Satisfaction -->
+            <div class="md:col-span-1">
+                <h3 class="text-2xl font-header font-bold mb-6">Our Commitment to Your Satisfaction</h3>
+                <p class="text-lg leading-relaxed mb-4">
+                    At MushCreeRoom, your journey into the world of indoor mushroom cultivation is our top priority. We are dedicated to providing not just high-quality products, but also unparalleled support and guidance every step of the way. Our team is passionate about mycology and committed to ensuring your growing experience is successful, enjoyable, and truly magical. From the moment you unbox your kit to the joy of your first harvest, we are here to assist you.
+                </p>
+                <p class="text-lg leading-relaxed">
+                    We stand by the quality of our kits and the clarity of our instructions. If you encounter any challenges or have questions, our dedicated support team and vibrant community forum are readily available to help. Your success is our success, and we strive to foster a supportive environment where every grower feels confident and inspired. We continuously gather feedback to improve our offerings and ensure that MushCreeRoom remains your trusted partner in cultivating wonders. Your satisfaction isn't just a goal; it's the very foundation of our brand.
+                </p>
+            </div>
+
+            <!-- Address -->
+            <div class="md:col-span-1">
+                <h3 class="text-2xl font-header font-bold mb-6">Find Your Fungal Haven</h3>
+                <address class="not-italic text-lg leading-relaxed">
+                    MushCreeRoom Headquarters<br>
+                    123 Mycelial Lane<br>
+                    Fungal Forest District<br>
+                    Botanical City, BC 12345<br>
+                    Dreamland, Earth<br>
+                    <br>
+                    Email: <a href="mailto:info@mushcreeroom.com" class="hover:text-accent-moss transition duration-300 ease-in-out">info@mushcreeroom.com</a><br>
+                    Phone: <a href="tel:+15551234567" class="hover:text-accent-moss transition duration-300 ease-in-out">+1 (555) 123-4567</a>
+                </address>
+                <p class="text-lg leading-relaxed mt-4">
+                    Our physical location is a place of inspiration and innovation, where new kits are developed and the magic of mycology is constantly explored. While we primarily operate online, our roots are deeply embedded in the spirit of growth and discovery.
+                </p>
+            </div>
+
+            <!-- Disclaimer -->
+            <div class="md:col-span-1">
+                <h3 class="text-2xl font-header font-bold mb-6">Important Disclaimer & Terms of Use</h3>
+                <p class="text-sm leading-relaxed mb-4">
+                    Welcome to MushCreeRoom.com. By accessing or using our website and purchasing our products, you agree to be bound by the following terms and conditions, as well as our Privacy Policy, Cookies Policy, and other applicable guidelines. The information provided on this website, including but not limited to growing guides, wellness information, and community discussions, is intended for general informational and educational purposes only. It is not intended to be a substitute for professional advice, diagnosis, or treatment. Always seek the advice of a qualified professional for any questions you may have regarding a medical condition, health objectives, or the safe consumption of any fungi.
+                </p>
+                <p class="text-sm leading-relaxed mb-4">
+                    MushCreeRoom provides kits for growing various types of mushrooms. While we strive to provide accurate and comprehensive instructions, successful cultivation depends on numerous factors, including environmental conditions, adherence to instructions, and individual care. We cannot guarantee specific growth rates, yields, or the complete absence of contaminants, as mycology involves complex biological processes. Users are responsible for understanding and adhering to local laws and regulations regarding the cultivation, possession, and consumption of any mushroom species. It is crucial to correctly identify any mushroom before consumption; misidentification can lead to serious health risks. MushCreeRoom explicitly disclaims any responsibility for adverse effects resulting from the use or misuse of our products or the information provided on our site.
+                </p>
+                <p class="text-sm leading-relaxed mb-4">
+                    All content, including text, graphics, images, and information, contained on or available through this website is for general information purposes only. MushCreeRoom makes no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability, or availability with respect to the website or the information, products, services, or related graphics contained on the website for any purpose. Any reliance you place on such information is therefore strictly at your own risk. In no event will we be liable for any loss or damage including without limitation, indirect or consequential loss or damage, or any loss or damage whatsoever arising from loss of data or profits arising out of, or in connection with, the use of this website.
+                </p>
+                <p class="text-sm leading-relaxed mb-4">
+                    Through this website, you are able to link to other websites which are not under the control of MushCreeRoom. We have no control over the nature, content, and availability of those sites. The inclusion of any links does not necessarily imply a recommendation or endorse the views expressed within them. Every effort is made to keep the website up and running smoothly. However, MushCreeRoom takes no responsibility for, and will not be liable for, the website being temporarily unavailable due to technical issues beyond our control. Your continued use of this site signifies your acceptance of these terms and conditions. We reserve the right to modify these terms at any time without prior notice.
+                </p>
+                <p class="text-sm leading-relaxed">
+                    MushCreeRoom is not responsible for the misuse of any products sold. All products are intended for legal purposes only. We encourage responsible and informed cultivation. If you have any doubts about a mushroom's identity or edibility, do not consume it. Safety first.
+                </p>
+            </div>
+        </div>
+        <div class="text-center text-sm mt-10 border-t border-accent-moss pt-6">
+            &copy; 2025 MushCreeRoom. All rights reserved. | Designed with love and mycelial magic.
+        </div>
+    </footer>
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookie-consent-banner" style="display: none;">
+        <p>
+            We use cookies to enhance your MushCreeRoom experience, analyze site traffic, and personalize content. By clicking "Accept All Cookies," you consent to the use of all cookies. For more details or to manage your preferences, click "Manage Preferences."
+        </p>
+        <div class="buttons">
+            <button id="accept-cookies">Accept All Cookies</button>
+            <button id="decline-cookies">Decline Non-Essential</button>
+            <button id="manage-cookies">Manage Preferences</button>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const cookieBanner = document.getElementById('cookie-consent-banner');
+            const acceptButton = document.getElementById('accept-cookies');
+            const declineButton = document.getElementById('decline-cookies');
+            const manageButton = document.getElementById('manage-cookies');
+
+            // Function to set a cookie
+            function setCookie(name, value, days) {
+                let expires = "";
+                if (days) {
+                    const date = new Date();
+                    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                    expires = "; expires=" + date.toUTCString();
+                }
+                document.cookie = name + "=" + (value || "") + expires + "; path=/";
+            }
+
+            // Function to get a cookie
+            function getCookie(name) {
+                const nameEQ = name + "=";
+                const ca = document.cookie.split(';');
+                for (let i = 0; i < ca.length; i++) {
+                    let c = ca[i];
+                    while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+                    if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+                }
+                return null;
+            }
+
+            // Check if cookie consent has been given
+            const consentGiven = getCookie('mushcreeroom_cookie_consent');
+
+            if (!consentGiven) {
+                cookieBanner.style.display = 'flex';
+            }
+
+            acceptButton.addEventListener('click', function() {
+                setCookie('mushcreeroom_cookie_consent', 'accepted', 365); // Store for 1 year
+                cookieBanner.style.display = 'none';
+                // Implement logic for accepting all cookies (e.g., load analytics scripts)
+                console.log('All cookies accepted.');
+            });
+
+            declineButton.addEventListener('click', function() {
+                setCookie('mushcreeroom_cookie_consent', 'declined', 365); // Store for 1 year
+                cookieBanner.style.display = 'none';
+                // Implement logic for declining non-essential cookies (e.g., block analytics, advertising)
+                console.log('Non-essential cookies declined.');
+            });
+
+            manageButton.addEventListener('click', function() {
+                // Redirect to a dedicated cookie management page or open a modal
+                console.log('Redirecting to cookie management page or opening modal.');
+                // For this example, we'll just hide the banner and log.
+                // In a real application, you'd navigate to a page where users can granularly control cookie types.
+                cookieBanner.style.display = 'none';
+                // Example: window.location.href = 'cookie-preferences.html';
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - MushCreeRoom</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Playfair Display for serif headers, Roboto for sans-serif body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom Tailwind Configuration */
+        :root {
+            --color-primary-plum: #6E3B6E;
+            --color-accent-cream: #EFE7DD;
+            --color-accent-moss: #7BA05B;
+            --color-accent-gray: #B0AAA0;
+        }
+
+        .font-header {
+            font-family: 'Playfair Display', serif;
+        }
+        .font-body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .bg-primary-plum { background-color: var(--color-primary-plum); }
+        .text-primary-plum { color: var(--color-primary-plum); }
+        .bg-accent-cream { background-color: var(--color-accent-cream); }
+        .text-accent-cream { color: var(--color-accent-cream); }
+        .bg-accent-moss { background-color: var(--color-accent-moss); }
+        .text-accent-moss { color: var(--color-moss); }
+        .bg-accent-gray { background-color: var(--color-accent-gray); }
+        .text-accent-gray { color: var(--color-accent-gray); }
+
+        /* Custom scrollbar for a more aesthetic feel */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: var(--color-accent-cream);
+            border-radius: 5px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--color-accent-moss);
+            border-radius: 5px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--color-primary-plum);
+        }
+
+        /* General body styling */
+        body {
+            background-color: var(--color-accent-cream);
+            color: #333;
+            line-height: 1.7;
+        }
+    </style>
+</head>
+<body class="font-body antialiased">
+    <!-- Header -->
+    <header class="bg-primary-plum text-accent-cream shadow-lg py-4 px-6 md:px-12 rounded-b-xl">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <h1 class="text-3xl font-header font-bold mb-4 md:mb-0">MushCreeRoom</h1>
+            <nav>
+                <ul class="flex flex-wrap justify-center space-x-4 md:space-x-8 text-lg">
+                    <li><a href="index.html" class="hover:text-accent-moss transition duration-300 ease-in-out px-3 py-2 rounded-lg">Home</a></li>
+                    <li><a href="privacy.html" class="hover:text-accent-moss transition duration-300 ease-in-out px-3 py-2 rounded-lg">Privacy</a></li>
+                    <li><a href="terms.html" class="hover:text-accent-moss transition duration-300 ease-in-out px-3 py-2 rounded-lg">Terms</a></li>
+                    <li><a href="cookies.html" class="hover:text-accent-moss transition duration-300 ease-in-out px-3 py-2 rounded-lg">Cookies</a></li>
+                    <li><a href="contact.html" class="hover:text-accent-moss transition duration-300 ease-in-out px-3 py-2 rounded-lg">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 md:px-12 py-16">
+        <section class="bg-white p-10 rounded-3xl shadow-xl mb-20">
+            <h2 class="text-4xl font-header font-bold text-primary-plum mb-8 text-center">Connect with MushCreeRoom</h2>
+            <p class="text-lg text-gray-700 mb-6 leading-relaxed text-center max-w-3xl mx-auto">
+                We love hearing from our community! Whether you have a question about our growing kits, need support with your fungal forest, want to share your success story, or simply wish to connect, the MushCreeRoom team is here to help. Your insights and inquiries are invaluable as we continue to cultivate magic indoors.
+            </p>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-12">
+                <!-- Contact Information -->
+                <div class="bg-accent-cream p-8 rounded-2xl shadow-lg border-l-4 border-accent-moss">
+                    <h3 class="text-3xl font-header font-bold text-primary-plum mb-6">Reach Out Directly</h3>
+                    <p class="text-lg text-gray-700 mb-4 leading-relaxed">
+                        Our dedicated team is ready to assist you with any questions or concerns. We strive to respond to all inquiries within 24-48 business hours. Please choose the method that works best for you.
+                    </p>
+
+                    <div class="mb-6">
+                        <h4 class="text-xl font-header font-bold text-accent-moss mb-2">Our Fungal Haven Headquarters:</h4>
+                        <address class="not-italic text-lg text-gray-700 leading-relaxed">
+                            MushCreeRoom Headquarters<br>
+                            123 Mycelial Lane<br>
+                            Fungal Forest District<br>
+                            Botanical City, BC 12345<br>
+                            Dreamland, Earth
+                        </address>
+                        <p class="text-sm text-gray-600 mt-2">
+                            <em>While we primarily operate online, this is our creative hub where new ideas sprout!</em>
+                        </p>
+                    </div>
+
+                    <div class="mb-6">
+                        <h4 class="text-xl font-header font-bold text-accent-moss mb-2">Email Us:</h4>
+                        <p class="text-lg text-gray-700">
+                            For general inquiries, support, or partnership opportunities:
+                            <br>
+                            <a href="mailto:info@mushcreeroom.com" class="text-primary-plum hover:underline font-semibold">info@mushcreeroom.com</a>
+                        </p>
+                        <p class="text-sm text-gray-600 mt-2">
+                            <em>We aim to respond to all emails within one business day.</em>
+                        </p>
+                    </div>
+
+                    <div class="mb-6">
+                        <h4 class="text-xl font-header font-bold text-accent-moss mb-2">Call Us:</h4>
+                        <p class="text-lg text-gray-700">
+                            For immediate assistance during business hours:
+                            <br>
+                            <a href="tel:+15551234567" class="text-primary-plum hover:underline font-semibold">+1 (555) 123-4567</a>
+                        </p>
+                        <p class="text-sm text-gray-600 mt-2">
+                            <em>Our phone lines are open Monday - Friday, 9:00 AM - 5:00 PM (Dreamland Standard Time).</em>
+                        </p>
+                    </div>
+
+                    <div>
+                        <h4 class="text-xl font-header font-bold text-accent-moss mb-2">Social Spores:</h4>
+                        <p class="text-lg text-gray-700 leading-relaxed">
+                            Follow our journey and join the conversation on our social media channels. We share daily doses of fungal inspiration, growing tips, and community highlights!
+                        </p>
+                        <ul class="flex space-x-4 mt-4">
+                            <li><a href="#" class="text-primary-plum hover:text-accent-moss transition duration-300 ease-in-out text-2xl" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#" class="text-primary-plum hover:text-accent-moss transition duration-300 ease-in-out text-2xl" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#" class="text-primary-plum hover:text-accent-moss transition duration-300 ease-in-out text-2xl" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a></li>
+                            <li><a href="#" class="text-primary-plum hover:text-accent-moss transition duration-300 ease-in-out text-2xl" aria-label="YouTube"><i class="fab fa-youtube"></i></a></li>
+                        </ul>
+                        <p class="text-sm text-gray-600 mt-2">
+                            <em>(Note: Social media icons are placeholders and require Font Awesome or similar library for display.)</em>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="bg-accent-cream p-8 rounded-2xl shadow-lg border-l-4 border-accent-moss">
+                    <h3 class="text-3xl font-header font-bold text-primary-plum mb-6">Send Us a Message</h3>
+                    <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                        Have a specific question or feedback? Fill out the form below, and we'll get back to you as soon as possible. Please provide as much detail as you can so we can assist you effectively.
+                    </p>
+                    <form action="#" method="POST" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-gray-700 text-lg font-body font-semibold mb-2">Your Name</label>
+                            <input type="text" id="name" name="name" class="w-full px-4 py-3 rounded-lg border border-accent-gray focus:border-primary-plum focus:ring focus:ring-primary-plum focus:ring-opacity-50 outline-none transition duration-200" placeholder="Enter your full name" required>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-700 text-lg font-body font-semibold mb-2">Your Email</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-3 rounded-lg border border-accent-gray focus:border-primary-plum focus:ring focus:ring-primary-plum focus:ring-opacity-50 outline-none transition duration-200" placeholder="your.email@example.com" required>
+                        </div>
+                        <div>
+                            <label for="subject" class="block text-gray-700 text-lg font-body font-semibold mb-2">Subject</label>
+                            <input type="text" id="subject" name="subject" class="w-full px-4 py-3 rounded-lg border border-accent-gray focus:border-primary-plum focus:ring focus:ring-primary-plum focus:ring-opacity-50 outline-none transition duration-200" placeholder="Regarding your order, a kit, etc." required>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-gray-700 text-lg font-body font-semibold mb-2">Your Message</label>
+                            <textarea id="message" name="message" rows="6" class="w-full px-4 py-3 rounded-lg border border-accent-gray focus:border-primary-plum focus:ring focus:ring-primary-plum focus:ring-opacity-50 outline-none transition duration-200" placeholder="Type your message here..." required></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="bg-primary-plum text-white px-8 py-4 rounded-full text-xl font-semibold hover:bg-opacity-90 transition duration-300 ease-in-out shadow-lg transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-primary-plum focus:ring-opacity-75">Send Message</button>
+                        </div>
+                    </form>
+                    <p class="text-sm text-gray-600 mt-6 text-center">
+                        <em>Please note: This is a placeholder form. For actual submission, you would need backend integration.</em>
+                    </p>
+                </div>
+            </div>
+
+            <div class="mt-20">
+                <h3 class="text-3xl font-header font-bold text-primary-plum mb-6 text-center">Frequently Asked Questions</h3>
+                <p class="text-lg text-gray-700 mb-8 leading-relaxed text-center max-w-3xl mx-auto">
+                    Before reaching out, you might find your answer in our comprehensive FAQ section. We've compiled common questions about growing, kits, and troubleshooting.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-accent-cream p-6 rounded-2xl shadow-md border-l-4 border-accent-moss">
+                        <h4 class="text-xl font-header font-bold text-primary-plum mb-2">Where can I find growing guides?</h4>
+                        <p class="text-gray-700">
+                            Our detailed growing guides are available in <a href="index.html#creeroom-journal" class="text-accent-moss hover:underline">The CreeRoom Journal</a> section of our website. You'll find step-by-step instructions for all our kits and tips for maximizing your harvest.
+                        </p>
+                    </div>
+                    <div class="bg-accent-cream p-6 rounded-2xl shadow-md border-l-4 border-accent-moss">
+                        <h4 class="text-xl font-header font-bold text-primary-plum mb-2">How do I track my order?</h4>
+                        <p class="text-gray-700">
+                            Once your order ships, you will receive an email with tracking information. You can also log into your <a href="#" class="text-accent-moss hover:underline">MushCreeRoom account</a> to view your order history and tracking details.
+                        </p>
+                    </div>
+                    <div class="bg-accent-cream p-6 rounded-2xl shadow-md border-l-4 border-accent-moss">
+                        <h4 class="text-xl font-header font-bold text-primary-plum mb-2">What is your return policy?</h4>
+                        <p class="text-gray-700">
+                            Our return and refund policy is detailed on our dedicated <a href="#" class="text-accent-moss hover:underline">Returns page</a>. Due to the nature of our products, specific conditions apply.
+                        </p>
+                    </div>
+                    <div class="bg-accent-cream p-6 rounded-2xl shadow-md border-l-4 border-accent-moss">
+                        <h4 class="text-xl font-header font-bold text-primary-plum mb-2">Can I share my grow room photos?</h4>
+                        <p class="text-gray-700">
+                            Absolutely! We encourage you to share your fungal sanctuaries in our <a href="index.html#inspo-gallery" class="text-accent-moss hover:underline">Grow Room Inspo Gallery</a>. There's even a "Room of the Month" feature!
+                        </p>
+                    </div>
+                </div>
+                <div class="text-center mt-10">
+                    <a href="#" class="inline-block bg-accent-moss text-white px-8 py-4 rounded-full text-xl font-semibold hover:bg-opacity-90 transition duration-300 ease-in-out shadow-lg transform hover:scale-105">Visit Our Full FAQ</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-primary-plum text-accent-cream py-12 px-6 md:px-12 rounded-t-xl">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
+            <!-- Customer Satisfaction -->
+            <div class="md:col-span-1">
+                <h3 class="text-2xl font-header font-bold mb-6">Our Commitment to Your Satisfaction</h3>
+                <p class="text-lg leading-relaxed mb-4">
+                    At MushCreeRoom, your journey into the world of indoor mushroom cultivation is our top priority. We are dedicated to providing not just high-quality products, but also unparalleled support and guidance every step of the way. Our team is passionate about mycology and committed to ensuring your growing experience is successful, enjoyable, and truly magical. From the moment you unbox your kit to the joy of your first harvest, we are here to assist you.
+                </p>
+                <p class="text-lg leading-relaxed">
+                    We stand by the quality of our kits and the clarity of our instructions. If you encounter any challenges or have questions, our dedicated support team and vibrant community forum are readily available to help. Your success is our success, and we strive to foster a supportive environment where every grower feels confident and inspired. We continuously gather feedback to improve our offerings and ensure that MushCreeRoom remains your trusted partner in cultivating wonders. Your satisfaction isn't just a goal; it's the very foundation of our brand.
+                </p>
+            </div>
+
+            <!-- Address -->
+            <div class="md:col-span-1">
+                <h3 class="text-2xl font-header font-bold mb-6">Find Your Fungal Haven</h3>
+                <address class="not-italic text-lg leading-relaxed">
+                    MushCreeRoom Headquarters<br>
+                    123 Mycelial Lane<br>
+                    Fungal Forest District<br>
+                    Botanical City, BC 12345<br>
+                    Dreamland, Earth<br>
+                    <br>
+                    Email: <a href="mailto:info@mushcreeroom.com" class="hover:text-accent-moss transition duration-300 ease-in-out">info@mushcreeroom.com</a><br>
+                    Phone: <a href="tel:+15551234567" class="hover:text-accent-moss transition duration-300 ease-in-out">+1 (555) 123-4567</a>
+                </address>
+                <p class="text-lg leading-relaxed mt-4">
+                    Our physical location is a place of inspiration and innovation, where new kits are developed and the magic of mycology is constantly explored. While we primarily operate online, our roots are deeply embedded in the spirit of growth and discovery.
+                </p>
+            </div>
+
+            <!-- Disclaimer -->
+            <div class="md:col-span-1">
+                <h3 class="text-2xl font-header font-bold mb-6">Important Disclaimer & Terms of Use</h3>
+                <p class="text-sm leading-relaxed mb-4">
+                    Welcome to MushCreeRoom.com. By accessing or using our website and purchasing our products, you agree to be bound by the following terms and conditions, as well as our Privacy Policy, Cookies Policy, and other applicable guidelines. The information provided on this website, including but not limited to growing guides, wellness information, and community discussions, is intended for general informational and educational purposes only. It is not intended to be a substitute for professional advice, diagnosis, or treatment. Always seek the advice of a qualified professional for any questions you may have regarding a medical condition, health objectives, or the safe consumption of any fungi.
+                </p>
+                <p class="text-sm leading-relaxed mb-4">
+                    MushCreeRoom provides kits for growing various types of mushrooms. While we strive to provide accurate and comprehensive instructions, successful cultivation depends on numerous factors, including environmental conditions, adherence to instructions, and individual care. We cannot guarantee specific growth rates, yields, or the complete absence of contaminants, as mycology involves complex biological processes. Users are responsible for understanding and adhering to local laws and regulations regarding the cultivation, possession, and consumption of any mushroom species. It is crucial to correctly identify any mushroom before consumption; misidentification can lead to serious health risks. MushCreeRoom explicitly disclaims any responsibility for adverse effects resulting from the use or misuse of our products or the information provided on our site.
+                </p>
+                <p class="text-sm leading-relaxed mb-4">
+                    All content, including text, graphics, images, and information, contained on or available through this website is for general information purposes only. MushCreeRoom makes no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability, or availability with respect to the website or the information, products, services, or related graphics contained on the website for any purpose. Any reliance you place on such information is therefore strictly at your own risk. In no event will we be liable for any loss or damage including without limitation, indirect or consequential loss or damage, or any loss or damage whatsoever arising from loss of data or profits arising out of, or in connection with, the use of this website.
+                </p>
+                <p class="text-sm leading-relaxed mb-4">
+                    Through this website, you are able to link to other websites which are not under the control of MushCreeRoom. We have no control over the nature, content, and availability of those sites. The inclusion of any links does not necessarily imply a recommendation or endorse the views expressed within them. Every effort is made to keep the website up and running smoothly. However, MushCreeRoom takes no responsibility for, and will not be liable for, the website being temporarily unavailable due to technical issues beyond our control. Your continued use of this site signifies your acceptance of these terms and conditions. We reserve the right to modify these terms at any time without prior notice.
+                </p>
+                <p class="text-sm leading-relaxed">
+                    MushCreeRoom is not responsible for the misuse of any products sold. All products are intended for legal purposes only. We encourage responsible and informed cultivation. If you have any doubts about a mushroom's identity or edibility, do not consume it. Safety first.
+                </p>
+            </div>
+        </div>
+        <div class="text-center text-sm mt-10 border-t border-accent-moss pt-6">
+            &copy; 2025 MushCreeRoom. All rights reserved. | Designed with love and mycelial magic.
+        </div>
+    </footer>
+    <!-- Font Awesome for social icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>
